@@ -1,0 +1,49 @@
+.title{
+    color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:60px;
+    font-family: Verdana;
+}
+.cards{
+    display: flex;
+   align-items: center;
+   max-width: 1450px;
+   padding-left: 10px;
+   padding-right: 10px;
+  background-color:none; 
+  color: rgb(39, 38, 38);
+ 
+
+}
+
+.card{
+   margin-left: 65px ;
+
+
+}
+.card:hover{
+  
+   transform: translateX(5%);
+   box-shadow: -14px 15px 20px -5px rgba(172,99,163,0.8);
+-webkit-box-shadow: -14px 15px 20px -5px rgba(172,99,163,0.8);
+-moz-box-shadow: -14px 15px 20px -5px rgba(172,99,163,0.8);
+}
+body{
+    background-color:rgb(39, 38, 38) ;
+    background-image: url("../../images/bg.png") ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+#preloader{
+    background-color:black ;
+    background-image: url("../images/lil.gif") ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    z-index: 100;
+}

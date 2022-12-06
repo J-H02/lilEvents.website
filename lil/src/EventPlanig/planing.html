@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>lil Support</title>
+        <link rel="stylesheet" type="text/css" href="style4.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            
+              <a class="navbar-brand" href="../Home.html">
+                <img src="../../images/lil vec.png" alt="Bootstrap" width="40" height="34">
+              </a>
+            
+          </nav>
+     <div class="main">
+        <div class="container">
+           
+            <form action="" id="contact">
+              <div class="alert">Message Sent</div>
+          
+              <label for="fname">Name</label>
+              <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+          
+              <label for="lname">Email</label>
+              <input type="email" id="email" name="" placeholder="Your Email.." required>
+
+              <label for="phone">Enter your phone number:</label><br>
+              <input type="tel" id="phone" name="phone"
+                
+                required>
+              <br><br>
+          
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="Lebanon">LEBANON</option>
+                <option value="UK">UK</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="country">Type Of Event</label>
+              <select id="Type" name="country" required>
+                <option value="Festival">Festival</option>
+                <option value="Dj">Dj Party</option>
+                <option value="Wedding">Wedding</option>
+                <option value="SE">Specail Event(birthday,gradution,ect..)</option>
+              </select>
+
+              <label for="fname">Date of Event</label><br>
+              <input type="date" id="date" required>
+              <br><br>
+
+              <label for="fname">Address</label>
+              <input type="text" id="address" name="firstname" placeholder="Event Address..." required>
+
+              <label for="fname">Number of people expected to attend</label><br>
+              <input type="number" id="fname" name="firstname" placeholder="Number of people expected.." >
+              <br><br>
+
+              <label for="fname">Do you want help in marketing and advertizing?</label><br>
+              <input type="radio" id="adds" name="fav_language" value="Yes"  >
+              <label for="html">Yes</label><br>
+              <input type="radio" id="adds" name="fav_language" value="No">
+              <label for="css">NO</label><br><br>
+          
+          
+              <label for="subject">Additional Details</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          
+        </div>
+     </div>   
+        
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+     <script src="app.js"></script>
+    </body>
+    
+</html>

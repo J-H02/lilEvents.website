@@ -1,0 +1,130 @@
+body{
+    background-color:rgb(28, 28, 36) ;
+    background-image: url(../../images/bg.png);
+   
+}
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+   
+  
+}
+  
+input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+   
+  
+}
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #AB63A2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #9B2B8D;
+    transform: translateX(5%);
+   
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: rgb(28, 28, 36);
+    padding: 20px;
+  }
+  @keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+  .container{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1450px;
+    background-color: rgb(39, 38, 38);
+    color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    
+  }
+  .container::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgb(28, 28, 36);
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(rgb(149, 14, 195), rgb(149, 14, 195)), linear-gradient(blue, blue), linear-gradient(rgb(149, 14, 195), rgb(149, 14, 195)), linear-gradient(blue, blue);
+    animation: rotate 4s linear infinite;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: rgb(28, 28, 36);
+    border-radius: 5px;
+    animation: opacityChange 3s infinite alternate;
+}
+
+
+@keyframes opacityChange {
+50% {
+    opacity:1;
+}
+100% {
+    opacity: 1;
+}
+}
+  .main{
+     display: flex;
+     justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+  }
+   .alert{
+    width: 92%;
+    background-color: rgb(6, 255, 6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    color: black;
+    display: none;
+   }
